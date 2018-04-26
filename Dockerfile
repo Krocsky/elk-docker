@@ -133,7 +133,7 @@ ADD ./logstash-beats.crt /etc/pki/tls/certs/logstash-beats.crt
 ADD ./logstash-beats.key /etc/pki/tls/private/logstash-beats.key
 
 # filters
-ADD ./02-beats-input.conf ${LOGSTASH_PATH_CONF}/conf.d/02-tcp-input.conf
+ADD ./02-tcp-input.conf ${LOGSTASH_PATH_CONF}/conf.d/02-tcp-input.conf
 ADD ./10-syslog.conf ${LOGSTASH_PATH_CONF}/conf.d/10-syslog.conf
 ADD ./11-nginx.conf ${LOGSTASH_PATH_CONF}/conf.d/11-nginx.conf
 ADD ./30-output.conf ${LOGSTASH_PATH_CONF}/conf.d/30-output.conf
